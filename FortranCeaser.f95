@@ -1,4 +1,4 @@
-program BonillaFortran
+program FortranCeaser
     implicit none
     character(len=100) :: toDecrypt, decrypted
     
@@ -15,7 +15,7 @@ program BonillaFortran
     print *, 'Encrypt/Decrypt Ex2'
     print *
     
-    toDecrypt = encrypt('Shadow Wizard Money Gang', 7)
+    toDecrypt = encrypt('Benji and Pepper my dawgs', 7)
     print *, 'Encrypted:', toDecrypt
     print *
     decrypted = decrypt(toDecrypt, 7)
@@ -25,7 +25,7 @@ program BonillaFortran
     print *, 'Encrypt/Decrypt Ex3'
     print *
     
-    toDecrypt = encrypt('English Bulldog', 15)
+    toDecrypt = encrypt('I wish this was python', 15)
     print *, 'Encrypted:', toDecrypt
     print *
     decrypted = decrypt(toDecrypt, 15)
@@ -39,10 +39,6 @@ program BonillaFortran
     print *, 'Solve Ex2'
     print*
     call solve('The quick brown fox jumps over the lazy dog', 26)
-    print*
-    print *, 'Solve Ex3'
-    print*
-    call solve('Pack my box with five dozen liquor jugs', 26)
     print*
 
 contains
@@ -122,4 +118,4 @@ contains
 
 
 
-end program BonillaFortran
+end program FortranCeaser
